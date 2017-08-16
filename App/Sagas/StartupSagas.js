@@ -1,4 +1,4 @@
-import {put, select} from "redux-saga/effects";
+import {put} from "redux-saga/effects";
 import StartupActions from "../Redux/StartupRedux";
 
 
