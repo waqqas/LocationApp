@@ -75,6 +75,7 @@ class LocationListScreen extends Component {
                 renderRow={this.renderLocation.bind(this)}
                 dataSource={this.ds.cloneWithRows(this.props.locations)}
                 enableEmptySections
+                onEndReached={this.props.getLocationList}
                 refreshControl={
                     <RefreshControl
                         refreshing={this.props.fetching}
