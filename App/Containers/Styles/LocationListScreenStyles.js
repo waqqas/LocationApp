@@ -3,6 +3,8 @@ import {ApplicationStyles, Metrics} from '../../Themes/'
 
 export default StyleSheet.create({
     ...ApplicationStyles.screen,
+    ...ApplicationStyles.navBar,
+    ...ApplicationStyles.list,
     container: {
         paddingBottom: Metrics.baseMargin
     },

@@ -6,7 +6,8 @@ export default () => {
     /* ------------- Assemble The Reducers ------------- */
     const rootReducer = combineReducers({
         nav: require('./NavigationRedux').reducer,
-        startup: require('./StartupRedux').reducer
+        startup: require('./StartupRedux').reducer,
+        location: require('./LocationRedux').reducer
     })
 
     return configureStore(rootReducer, rootSaga)

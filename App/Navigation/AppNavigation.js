@@ -1,15 +1,17 @@
 import {StackNavigator} from 'react-navigation'
-import LaunchScreen from '../Containers/LaunchScreen'
 
 import styles from './Styles/NavigationStyles'
+import SplashScreen from "../Containers/SplashScreen";
+import LocationListScreen from "../Containers/LocationListScreen";
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
-    LaunchScreen: {screen: LaunchScreen}
+    LocationListScreen: {screen: LocationListScreen},
+    SplashScreen: {screen: SplashScreen}
 }, {
     // Default config for all screens
-    headerMode: 'none',
-    initialRouteName: 'LaunchScreen',
+    headerMode: 'float',
+    initialRouteName: 'SplashScreen',
     navigationOptions: {
         headerStyle: styles.header
     }

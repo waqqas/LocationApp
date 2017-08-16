@@ -46,6 +46,37 @@ const ApplicationStyles = {
             color: Colors.text
         }
     },
+    navBar: {
+        navLeftButton: {
+            flexDirection: 'row',
+            backgroundColor: Colors.transparent,
+            alignItems: 'center'
+        },
+        navLeftButtonIcon: {
+            backgroundColor: Colors.transparent
+        },
+        navLeftButtonText: {
+            fontSize: Fonts.size.h5,
+            color: Colors.charcoal,
+            paddingLeft: Metrics.marginHorizontal
+        },
+        navTitle: {
+            fontSize: Fonts.size.h5,
+            color: Colors.charcoal
+        }
+    },
+    list: {
+        listContainer: {
+            flex: 1,
+            backgroundColor: Colors.transparent
+        },
+        listItem: {
+            backgroundColor: Colors.snow
+        },
+        listTitle: {
+            color: Colors.charcoal
+        }
+    },
     darkLabelContainer: {
         padding: Metrics.smallMargin,
         paddingBottom: Metrics.doubleBaseMargin,
