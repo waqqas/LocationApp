@@ -2,7 +2,7 @@ import React, {Component, PropTypes} from 'react'
 import {Text, TouchableOpacity} from 'react-native'
 import {Icon} from 'react-native-elements'
 
-import styles from './Styles/NavItemStyle'
+import styles from './Styles/NavItemStyles'
 import {Colors, Fonts} from '../Themes'
 
 export default class NavItem extends Component {
