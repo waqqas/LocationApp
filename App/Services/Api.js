@@ -11,12 +11,13 @@ const create = (baseURL = AppConfig.baseApiUrl) => {
         timeout: 10000
     })
 
-    const getLocationList = (latitude, longitude, page, limit) => api.get('/location_service', {
+    const getLocationList = (latitude, longitude, page, limit, radius) => api.get('/location_service', {
         search: 1,
         latitude,
         longitude,
         page,
-        limit
+        limit,
+        radius
     })
 
     return {

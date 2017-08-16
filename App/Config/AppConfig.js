@@ -1,8 +1,10 @@
 export default {
-    baseApiUrl: 'http://localhost',
+    baseApiUrl: 'http://newtouchd.dev',
     defaultLimit: 3,
-    currentCoord: {
-        latitude: 53.5,
-        longitude: -113.4
-    },
+    defaultRadius: 1500,
+    // currentCoord: {
+    //     latitude: 53.5,
+    //     longitude: -113.4
+    // },
+    currentCoord: null
 }

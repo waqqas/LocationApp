@@ -6,6 +6,8 @@ export default StyleSheet.create({
     ...ApplicationStyles.navBar,
     ...ApplicationStyles.list,
     container: {
+        flex: 1,
+        marginTop: Metrics.navBarHeight,
         paddingBottom: Metrics.baseMargin
     },
     logo: {

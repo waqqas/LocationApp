@@ -49,8 +49,6 @@ class LocationListScreen extends Component {
     }
 
     renderLocation(location, sectionId) {
-        console.log('loc: ', location, sectionId)
-
         return (<ListItem style={styles.listItem}
                           chevronColor={Colors.snow}
                           onPress={this.onShowLocation.bind(this, location)}
