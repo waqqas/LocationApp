@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
 import {Image, InteractionManager, ListView, RefreshControl, ScrollView, Text, View} from 'react-native'
 import {connect} from "react-redux";
-import {Header} from 'react-native-elements'
+import {Header, Card, Button} from 'react-native-elements'
 // Styles
 import styles from './Styles/LocationScreenStyles'
 import NavItem from "../Components/NavItem";
+import LocationActions from '../Redux/LocationRedux'
 
 class LocationScreen extends Component {
     static navigationOptions = ({navigation}) => {
@@ -42,10 +43,24 @@ class LocationScreen extends Component {
 
     }
 
+    verifyLocation(){
+        this.props.verifyLocation(this.props.location)
+    }
+
     render() {
+        const {location} = this.props
+
         return (
             <View style={styles.mainContainer}>
                 <View style={styles.container}>
+                    <Card title={location.name}>
+                        <Text>{location.phonenumber}</Text>
+                        <Text>{location.street}</Text>
+                    </Card>
+                    <Card title={'About Us'}>
+                        <Text>{location.about}</Text>
+                    </Card>
+                    <Button onPress={this.verifyLocation.bind(this)} title={'Verify'}/>
                 </View>
             </View>
         )
@@ -60,7 +75,9 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch) => {
-    return {}
+    return {
+        verifyLocation: (location) => dispatch(LocationActions.verifyLocation(location))
+    }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(LocationScreen)

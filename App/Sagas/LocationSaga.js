@@ -1,4 +1,5 @@
 import {call, put, select} from 'redux-saga/effects'
+import {Alert} from 'react-native'
 import {Location, Permissions} from 'expo'
 import _ from 'lodash'
 
@@ -38,4 +39,44 @@ export function* getLocationList(api) {
     } else {
         yield put(LocationActions.getLocationListFailure(response))
     }
+}
+
+export function* verifyLocation(api, {location}) {
+    const {status} = yield call(Permissions.getAsync, Permissions.LOCATION)
+
+    let response = null
+
+    switch (status) {
+        case 'granted':
+            const {coords} = yield call(Location.getCurrentPositionAsync, {enableHighAccuracy: true})
+            AppConfig.currentCoord && _.merge(coords, AppConfig.currentCoord)
+
+            const {latitude, longitude} = coords
+
+            response = yield call(api.verifyLocation, location.id, latitude, longitude)
+
+            break
+        case 'undetermined':
+            yield call(Permissions.askAsync, Permissions.LOCATION)
+            yield put(LocationActions.getLocationList())
+            break
+    }
+
+    if (response !== null && response.ok === true) {
+        yield put(LocationActions.verifyLocationSuccess(response))
+    } else {
+        yield put(LocationActions.verifyLocationFailure(response))
+    }
+}
+
+export function* verifyLocationSuccess(api, {response}) {
+    Alert.alert(
+        'In Radius',
+        response.data.inRadius.toString(),
+        [
+            {text: 'OK'},
+        ],
+        {cancelable: false}
+    )
+
 }

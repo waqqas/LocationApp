@@ -8,7 +8,10 @@ const {Types, Creators} = createActions({
     resetLocationList: null,
     getLocationListSuccess: ['response'],
     getLocationListFailure: ['response'],
-    selectLocation: ['location']
+    selectLocation: ['location'],
+    verifyLocation:  ['location'],
+    verifyLocationSuccess: ['response'],
+    verifyLocationFailure: ['response'],
 })
 
 export const LocationTypes = Types
@@ -38,7 +41,6 @@ export const getLocationListSuccess = (state, {response}) => {
 export const getLocationListFailure = (state, {response}) => state.merge({fetching: false, error: response})
 
 export const selectLocation = (state, {location}) => state.merge({selected: location})
-
 
 /* ------------- Hookup Reducers To Types ------------- */
 

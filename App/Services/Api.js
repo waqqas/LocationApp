@@ -20,8 +20,16 @@ const create = (baseURL = AppConfig.baseApiUrl) => {
         radius
     })
 
+    const verifyLocation = (id, latitude, longitude) => api.get('/location_service', {
+        verify: 1,
+        id,
+        latitude,
+        longitude
+    })
+
     return {
-        getLocationList
+        getLocationList,
+        verifyLocation
     }
 }
 
