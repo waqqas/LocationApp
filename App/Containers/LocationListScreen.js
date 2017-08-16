@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Image, InteractionManager, ListView, ScrollView, Text, View, RefreshControl} from 'react-native'
+import {Image, InteractionManager, ListView, RefreshControl, ScrollView, Text, View} from 'react-native'
 import {connect} from "react-redux";
 import {Header, List, ListItem} from 'react-native-elements'
 // Styles
@@ -49,18 +49,19 @@ class LocationListScreen extends Component {
     }
 
     renderLocation(location, sectionId) {
+        console.log('loc: ', location, sectionId)
+
         return (<ListItem style={styles.listItem}
                           chevronColor={Colors.snow}
                           onPress={this.onShowLocation.bind(this, location)}
                           key={sectionId}
-                          title={location.client}
-                          subtitle={location.address}
+                          title={location.name}
+                          subtitle={location.street}
                           titleStyle={styles.listTitle}
         />)
     }
 
     renderLocationList() {
-
         return (<List style={styles.listContainer}>
             <ListView
                 renderRow={this.renderLocation.bind(this)}

@@ -20,6 +20,7 @@ export const INITIAL_STATE = Immutable({
   fetching: false,
   error: null,
   list: [],
+    meta: null,
   selected: null,
 })
 
@@ -27,11 +28,11 @@ export const INITIAL_STATE = Immutable({
 
 export const getLocationList = (state) => state.merge({fetching: true})
 
-export const resetLocationList = (state) => state.merge({list: []})
+export const resetLocationList = (state) => state.merge({list: [], meta: null})
 
 export const getLocationListSuccess = (state, {response}) => {
-  const {data} = response.data
-  return state.merge({fetching: false, error: null, list: data})
+  const {data, pageMetaData} = response.data
+  return state.merge({fetching: false, error: null, list: data, meta: pageMetaData})
 }
 
 export const getLocationListFailure = (state, {response}) => state.merge({fetching: false, error: response})

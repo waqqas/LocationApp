@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c85deac-e2ac-400c-a086-d174ee66d7ce" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Containers/LaunchScreen.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Containers/Styles/LaunchScreenStyles.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Sagas/LocationSaga.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Navigation/AppNavigation.js" afterPath="$PROJECT_DIR$/App/Navigation/AppNavigation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Redux/index.js" afterPath="$PROJECT_DIR$/App/Redux/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Themes/ApplicationStyles.js" afterPath="$PROJECT_DIR$/App/Themes/ApplicationStyles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Themes/Images.js" afterPath="$PROJECT_DIR$/App/Themes/Images.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Config/AppConfig.js" afterPath="$PROJECT_DIR$/App/Config/AppConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Containers/LocationListScreen.js" afterPath="$PROJECT_DIR$/App/Containers/LocationListScreen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Redux/LocationRedux.js" afterPath="$PROJECT_DIR$/App/Redux/LocationRedux.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Sagas/index.js" afterPath="$PROJECT_DIR$/App/Sagas/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Services/Api.js" afterPath="$PROJECT_DIR$/App/Services/Api.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,30 +22,33 @@
       <file leaf-file-name="LocationListScreen.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Containers/LocationListScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+            <state relative-caret-position="238">
+              <caret line="14" column="69" lean-forward="false" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#252#306#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocationRedux.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Redux/LocationRedux.js">
+      <file leaf-file-name="LocationSaga.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Sagas/LocationSaga.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-              <folding />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationStyles.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ApplicationStyles.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/Themes/ApplicationStyles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="605">
+              <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -63,13 +66,15 @@
       <find>LaunchScreen</find>
       <find>job</find>
       <find>Check</find>
+      <find>Job</find>
       <find>NearbyListScreen</find>
+      <find>call</find>
     </findStrings>
     <replaceStrings>
       <replace>NearbyListScreen</replace>
       <replace>location</replace>
-      <replace>Location</replace>
       <replace>LocationListScreen</replace>
+      <replace>Location</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -80,7 +85,6 @@
       <list>
         <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/App/Config/AppConfig.js" />
         <option value="$PROJECT_DIR$/App/Config/ReduxPersist.js" />
         <option value="$PROJECT_DIR$/App/Containers/RootContainer.js" />
         <option value="$PROJECT_DIR$/App/Containers/App.js" />
@@ -94,9 +98,7 @@
         <option value="$PROJECT_DIR$/App/Redux/NavigationRedux.js" />
         <option value="$PROJECT_DIR$/App/Redux/ScreenTrackingMiddleware.js" />
         <option value="$PROJECT_DIR$/App/Redux/StartupRedux.js" />
-        <option value="$PROJECT_DIR$/App/Sagas/index.js" />
         <option value="$PROJECT_DIR$/App/Sagas/StartupSagas.js" />
-        <option value="$PROJECT_DIR$/App/Services/Api.js" />
         <option value="$PROJECT_DIR$/App/Services/ImmutablePersistenceTransform.js" />
         <option value="$PROJECT_DIR$/App/Services/RehydrationServices.js" />
         <option value="$PROJECT_DIR$/App/Themes/Colors.js" />
@@ -104,14 +106,18 @@
         <option value="$PROJECT_DIR$/App/Themes/index.js" />
         <option value="$PROJECT_DIR$/App/Containers/LaunchScreen.js" />
         <option value="$PROJECT_DIR$/App/Themes/Images.js" />
-        <option value="$PROJECT_DIR$/App/Redux/LocationRedux.js" />
         <option value="$PROJECT_DIR$/App/Redux/index.js" />
         <option value="$PROJECT_DIR$/App/Themes/ApplicationStyles.js" />
         <option value="$PROJECT_DIR$/App/Containers/NearbyListScreen.js" />
-        <option value="$PROJECT_DIR$/App/Containers/LocationListScreen.js" />
         <option value="$PROJECT_DIR$/App/Containers/Styles/LocationListScreenStyles.js" />
         <option value="$PROJECT_DIR$/App/Containers/SplashScreen.js" />
         <option value="$PROJECT_DIR$/App/Navigation/AppNavigation.js" />
+        <option value="$PROJECT_DIR$/App/Sagas/index.js" />
+        <option value="$PROJECT_DIR$/App/Services/Api.js" />
+        <option value="$PROJECT_DIR$/App/Redux/LocationRedux.js" />
+        <option value="$PROJECT_DIR$/App/Config/AppConfig.js" />
+        <option value="$PROJECT_DIR$/App/Sagas/LocationSaga.js" />
+        <option value="$PROJECT_DIR$/App/Containers/LocationListScreen.js" />
       </list>
     </option>
   </component>
@@ -164,6 +170,23 @@
               <item name="LocationApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="LocationApp" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="LocationApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LocationApp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="LocationApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LocationApp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Sagas" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="LocationApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LocationApp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Services" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -213,7 +236,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1502874175516</updated>
-      <workItem from="1502874189359" duration="5827000" />
+      <workItem from="1502874189359" duration="8767000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize project by CRNA">
       <created>1502874379265</created>
@@ -236,11 +259,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502877312063</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Location Screen and Redux">
+      <created>1502880975936</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1502880975940</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5827000" />
+    <option name="totallyTimeSpent" value="8767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1547" y="23" width="1547" height="877" extended-state="6" />
@@ -275,7 +305,8 @@
     <MESSAGE value="Initialize project by CRNA" />
     <MESSAGE value="Setup project structure" />
     <MESSAGE value="More formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="More formatting" />
+    <MESSAGE value="Added Location Screen and Redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Location Screen and Redux" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -307,22 +338,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="72" lean-forward="false" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Config/AppConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="34" lean-forward="true" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -440,32 +455,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Sagas/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#45#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Sagas/StartupSagas.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Services/Api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-          <folding>
-            <element signature="e#44#75#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -542,16 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Containers/LocationListScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Containers/Styles/LocationListScreenStyles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -573,26 +558,83 @@
         <state relative-caret-position="136">
           <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Themes/ApplicationStyles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Redux/LocationRedux.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        <state relative-caret-position="375">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Sagas/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="72" lean-forward="false" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Services/Api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="e#44#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Config/AppConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Sagas/LocationSaga.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Containers/LocationListScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="69" lean-forward="false" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#252#306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Themes/ApplicationStyles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
