@@ -1,5 +1,5 @@
 export default {
-    baseApiUrl: 'http://newtouchd.dev',
+    baseApiUrl: 'http://fitperfection.com/api/index.php',
     defaultLimit: 3,
     defaultRadius: 10000,
     // currentCoord: {
