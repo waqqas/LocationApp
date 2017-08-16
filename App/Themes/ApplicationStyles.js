@@ -62,7 +62,8 @@ const ApplicationStyles = {
         },
         navTitle: {
             fontSize: Fonts.size.h5,
-            color: Colors.charcoal
+            color: Colors.charcoal,
+            backgroundColor: Colors.transparent
         }
     },
     list: {

@@ -32,7 +32,7 @@ export const resetLocationList = (state) => state.merge({list: [], meta: null})
 
 export const getLocationListSuccess = (state, {response}) => {
     const {data, pageMetaData} = response.data
-    return state.merge({fetching: false, error: null, list: data, meta: pageMetaData})
+    return state.merge({fetching: false, error: null, list: state.list.concat(data), meta: pageMetaData})
 }
 
 export const getLocationListFailure = (state, {response}) => state.merge({fetching: false, error: response})

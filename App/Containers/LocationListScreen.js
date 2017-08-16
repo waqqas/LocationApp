@@ -48,14 +48,24 @@ class LocationListScreen extends Component {
         this.props.navigation.navigate('LocationScreen')
     }
 
+    getDistance(location){
+        return (location.distance/1000).toFixed(1) + ' km'
+    }
+
+    getSubtitle(location){
+        return (location.street + '\n' + location.tagline)
+    }
     renderLocation(location, sectionId) {
         return (<ListItem style={styles.listItem}
+                          avatar={{uri: location.thumbUrl}}
                           chevronColor={Colors.charcoal}
                           onPress={this.onShowLocation.bind(this, location)}
                           key={sectionId}
                           title={location.name}
-                          subtitle={location.street}
+                          subtitle={this.getSubtitle(location)}
+                          subtitleNumberOfLines={2}
                           titleStyle={styles.listTitle}
+                          rightTitle={this.getDistance(location)}
         />)
     }
 
