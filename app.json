@@ -3,6 +3,11 @@
     "name": "LocationApp",
     "slug": "location-app",
     "sdkVersion": "19.0.0",
-    "privacy": "unlisted"
+    "privacy": "unlisted",
+    "android": {
+      "permissions": [
+        "ACCESS_FINE_LOCATION"
+      ]
+    }
   }
 }

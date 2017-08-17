@@ -1,6 +1,6 @@
 export default {
     baseApiUrl: 'http://fitperfection.com/api/index.php',
-    defaultLimit: 10,
+    defaultLimit: 2,
     defaultRadius: 10000,
     // currentCoord: {
     //     latitude: 53.5,

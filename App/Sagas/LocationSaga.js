@@ -9,6 +9,8 @@ import AppConfig from "../Config/AppConfig";
 export function* getLocationList(api) {
     const {status} = yield call(Permissions.getAsync, Permissions.LOCATION)
 
+    console.log('status:', status)
+
     let response = null
 
     switch (status) {
@@ -32,6 +34,15 @@ export function* getLocationList(api) {
             yield call(Permissions.askAsync, Permissions.LOCATION)
             yield put(LocationActions.getLocationList())
             break
+        case 'denied':
+            Alert.alert(
+                'Location Permission Denied',
+                'Please turn on the GPS and refresh',
+                [
+                    {text: 'OK'}
+                ],
+                {cancelable: false}
+            )
     }
 
     if (response !== null && response.ok === true) {
@@ -43,6 +54,8 @@ export function* getLocationList(api) {
 
 export function* verifyLocation(api, {location}) {
     const {status} = yield call(Permissions.getAsync, Permissions.LOCATION)
+
+    console.log('status:', status)
 
     let response = null
 
@@ -60,6 +73,16 @@ export function* verifyLocation(api, {location}) {
             yield call(Permissions.askAsync, Permissions.LOCATION)
             yield put(LocationActions.getLocationList())
             break
+        case 'denied':
+            Alert.alert(
+                'Location Permission Denied',
+                'Please turn on the GPS and refresh',
+                [
+                    {text: 'OK'}
+                ],
+                {cancelable: false}
+            )
+
     }
 
     if (response !== null && response.ok === true) {

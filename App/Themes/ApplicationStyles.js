@@ -83,14 +83,26 @@ const ApplicationStyles = {
             backgroundColor: Colors.transparent
         },
         listItem: {
-            paddingTop: Metrics.baseMargin,
+            paddingVertical: Metrics.baseMargin,
             backgroundColor: Colors.snow
         },
         listTitle: {
-            color: Colors.charcoal
+            color: Colors.charcoal,
+            fontFamily: Fonts.type.bold,
+            fontSize: Fonts.size.regular
         },
-        listSubtitleStyle:{
-          width: 300
+        listTitleStyle: {
+            marginLeft: Metrics.baseMargin,
+            width: 300,
+        },
+        listSubtitleStyle: {
+            marginLeft: Metrics.baseMargin,
+            width: 300
+        },
+        listAvatar: {},
+        listAvatarContainer: {
+            marginHorizontal: Metrics.baseMargin,
+            marginVertical: Metrics.baseMargin
         }
     },
     darkLabelContainer: {

@@ -60,10 +60,13 @@ class LocationListScreen extends Component {
     renderLocation(location, sectionId) {
         return (<ListItem style={styles.listItem}
                           avatar={{uri: location.thumbUrl}}
+                          avatarStyle={styles.listAvatar}
+                          avatarContainerStyle={styles.listAvatarContainer}
                           chevronColor={Colors.charcoal}
                           onPress={this.onShowLocation.bind(this, location)}
                           key={sectionId}
                           title={location.name}
+                          titleContainerStyle={styles.listTitleStyle}
                           subtitle={this.getSubtitle(location)}
                           subtitleStyle={styles.listSubtitleStyle}
                           subtitleNumberOfLines={3}
