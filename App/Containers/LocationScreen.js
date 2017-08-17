@@ -52,7 +52,7 @@ class LocationScreen extends Component {
 
         return (
             <View style={styles.mainContainer}>
-                <View style={styles.container}>
+                <ScrollView style={styles.container}>
                     <Card title={location.name}>
                         <Text>{location.phonenumber}</Text>
                         <Text>{location.street}</Text>
@@ -61,7 +61,7 @@ class LocationScreen extends Component {
                         <Text>{location.about}</Text>
                     </Card>
                     <Button onPress={this.verifyLocation.bind(this)} title={'Verify'}/>
-                </View>
+                </ScrollView>
             </View>
         )
     }
