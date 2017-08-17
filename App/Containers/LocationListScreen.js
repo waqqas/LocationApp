@@ -53,7 +53,7 @@ class LocationListScreen extends Component {
         return (location.distance / 1000).toFixed(1) + ' km'
     }
 
-    getSubtitle(location) {
+    static getSubtitle(location) {
         return (location.street + '\n' + location.tagline)
     }
 
@@ -67,7 +67,7 @@ class LocationListScreen extends Component {
                           key={sectionId}
                           title={location.name}
                           titleContainerStyle={styles.listTitleStyle}
-                          subtitle={this.getSubtitle(location)}
+                          subtitle={LocationListScreen.getSubtitle(location)}
                           subtitleStyle={styles.listSubtitleStyle}
                           subtitleNumberOfLines={3}
                           titleStyle={styles.listTitle}
@@ -78,6 +78,7 @@ class LocationListScreen extends Component {
     renderLocationList() {
         return (<List style={styles.listContainer}>
             <ListView
+                style={{marginTop: 10}}
                 renderRow={this.renderLocation.bind(this)}
                 dataSource={this.ds.cloneWithRows(this.props.locations)}
                 enableEmptySections

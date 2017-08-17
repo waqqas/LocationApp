@@ -96,7 +96,7 @@ const ApplicationStyles = {
             width: 300,
         },
         listSubtitleStyle: {
-            marginLeft: Metrics.baseMargin,
+            marginLeft: Metrics.doubleBaseMargin,
             width: 300
         },
         listAvatar: {},
