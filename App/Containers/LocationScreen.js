@@ -18,7 +18,6 @@ class LocationScreen extends Component {
             onLeftButtonPress = params.onLeftButtonPress
         }
 
-
         const header = (
             <Header
                 outerContainerStyles={styles.navBarContainer}
@@ -27,8 +26,8 @@ class LocationScreen extends Component {
             />)
 
         return ({
-            header
-        })
+            header,
+    })
     }
 
     onLeftButtonPress() {

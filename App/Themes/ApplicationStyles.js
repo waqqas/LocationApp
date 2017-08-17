@@ -46,6 +46,14 @@ const ApplicationStyles = {
             color: Colors.text
         }
     },
+    tabBar: {
+        tabBarIcon: {
+            color: Colors.facebook
+        },
+        tabBarIconInactive: {
+            color: Colors.steel
+        }
+    },
     navBar: {
         navBarContainer: {
             backgroundColor: Colors.facebook

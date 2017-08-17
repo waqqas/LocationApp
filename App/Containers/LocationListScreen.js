@@ -49,13 +49,14 @@ class LocationListScreen extends Component {
         this.props.navigation.navigate('LocationScreen')
     }
 
-    getDistance(location){
-        return (location.distance/1000).toFixed(1) + ' km'
+    getDistance(location) {
+        return (location.distance / 1000).toFixed(1) + ' km'
     }
 
-    getSubtitle(location){
+    getSubtitle(location) {
         return (location.street + '\n' + location.tagline)
     }
+
     renderLocation(location, sectionId) {
         return (<ListItem style={styles.listItem}
                           avatar={{uri: location.thumbUrl}}
