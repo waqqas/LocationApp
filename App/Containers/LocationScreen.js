@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Image, InteractionManager, ListView, RefreshControl, ScrollView, Text, View} from 'react-native'
 import {connect} from "react-redux";
-import {Header, Card, Button} from 'react-native-elements'
+import {Button, Card, Header} from 'react-native-elements'
 // Styles
 import styles from './Styles/LocationScreenStyles'
 import NavItem from "../Components/NavItem";
@@ -21,6 +21,7 @@ class LocationScreen extends Component {
 
         const header = (
             <Header
+                outerContainerStyles={styles.navBarContainer}
                 leftComponent={<NavItem onPress={onLeftButtonPress} iconName='chevron-left' text='Back'/>}
                 centerComponent={{text: title, style: styles.navTitle}}
             />)
@@ -43,7 +44,7 @@ class LocationScreen extends Component {
 
     }
 
-    verifyLocation(){
+    verifyLocation() {
         this.props.verifyLocation(this.props.location)
     }
 
@@ -54,13 +55,19 @@ class LocationScreen extends Component {
             <View style={styles.mainContainer}>
                 <ScrollView style={styles.container}>
                     <Card title={location.name}>
-                        <Text>{location.phonenumber}</Text>
-                        <Text>{location.street}</Text>
+                        <View style={{flex: 1, flexDirection: 'row', justifyContent: 'flex-start'}}>
+                            <Image style={{height: 45, width: 45}} source={{uri: location.thumbUrl}}/>
+                            <View style={{paddingLeft: 10}}>
+                                <Text>{location.phonenumber}</Text>
+                                <Text>{location.street}</Text>
+                            </View>
+                        </View>
                     </Card>
                     <Card title={'About Us'}>
                         <Text>{location.about}</Text>
                     </Card>
-                    <Button onPress={this.verifyLocation.bind(this)} title={'Verify'}/>
+                    <Button style={{marginTop: 10}} backgroundColor='green' color='white'
+                            onPress={this.verifyLocation.bind(this)} title={'Verify'}/>
                 </ScrollView>
             </View>
         )

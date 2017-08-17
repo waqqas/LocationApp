@@ -27,7 +27,7 @@ export default class NavItem extends Component {
 
     return (<TouchableOpacity onPress={onPress} style={styles.navLeftButton}>
         {iconName !== '' &&
-        <Icon type={iconType} name={iconName} style={styles.navLeftButtonIcon} color={Colors.charcoal}
+        <Icon type={iconType} name={iconName} style={styles.navLeftButtonIcon} color={Colors.snow}
               size={Fonts.size.h5}/>}
         {text !== '' && <Text style={styles.navLeftButtonText}>{text}</Text>}
       </TouchableOpacity>

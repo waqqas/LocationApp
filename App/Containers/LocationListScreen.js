@@ -12,6 +12,7 @@ class LocationListScreen extends Component {
     static navigationOptions = ({navigation}) => {
         const header = (
             <Header
+                outerContainerStyles={styles.navBarContainer}
                 centerComponent={{text: 'Nearby', style: styles.navTitle}}
             />)
 
@@ -63,7 +64,8 @@ class LocationListScreen extends Component {
                           key={sectionId}
                           title={location.name}
                           subtitle={this.getSubtitle(location)}
-                          subtitleNumberOfLines={2}
+                          subtitleStyle={styles.listSubtitleStyle}
+                          subtitleNumberOfLines={3}
                           titleStyle={styles.listTitle}
                           rightTitle={this.getDistance(location)}
         />)

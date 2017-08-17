@@ -47,6 +47,9 @@ const ApplicationStyles = {
         }
     },
     navBar: {
+        navBarContainer: {
+            backgroundColor: Colors.facebook
+        },
         navLeftButton: {
             flexDirection: 'row',
             backgroundColor: Colors.transparent,
@@ -57,12 +60,12 @@ const ApplicationStyles = {
         },
         navLeftButtonText: {
             fontSize: Fonts.size.h5,
-            color: Colors.charcoal,
+            color: Colors.snow,
             paddingLeft: Metrics.marginHorizontal
         },
         navTitle: {
             fontSize: Fonts.size.h5,
-            color: Colors.charcoal,
+            color: Colors.snow,
             backgroundColor: Colors.transparent
         }
     },
@@ -72,10 +75,14 @@ const ApplicationStyles = {
             backgroundColor: Colors.transparent
         },
         listItem: {
+            paddingTop: Metrics.baseMargin,
             backgroundColor: Colors.snow
         },
         listTitle: {
             color: Colors.charcoal
+        },
+        listSubtitleStyle:{
+          width: 300
         }
     },
     darkLabelContainer: {
